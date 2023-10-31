@@ -1,0 +1,17 @@
+name: "gfpgan"
+platform: "pytorch_libtorch"
+max_batch_size: 32
+input [
+    {
+        name: "INPUT__0"
+        data_type: TYPE_FP32
+        dims: [3, 512, 512]
+    }
+]
+output [
+    {
+        name: "OUTPUT__0"
+        data_type: TYPE_FP32
+        dims: [3, 512, 512]
+    }
+]
